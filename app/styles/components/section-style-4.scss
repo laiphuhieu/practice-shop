@@ -1,0 +1,57 @@
+.section-bg {
+    background: $section-bg;
+    padding-bottom: 120px;
+}
+
+.single-card {
+    text-align: center;
+    box-shadow: 0 0 6.37px 0.63px rgba(32, 32, 32, 0.07);
+    padding: 65px 40px 40px;
+    background: $white;
+    transition: all 0.3s;
+        &:hover {
+            background-color: #f99a00;
+            transform: translateY(-10px);
+                .card-title,
+                .card-descr{
+                    color: $white;
+                }
+                .card-title::after {
+                   background: $white;
+                }
+        }
+        .card-img-wrapper {
+            display: flex;
+            justify-content: center;
+                img {
+                    max-height: 90px;
+                }
+        }
+
+        .card-title {
+            color: #383838;
+            margin-top: 20px;
+            margin-bottom: 32px;
+            position: relative;
+            font-weight: $font-weight-bold;
+            font-size: $font-medium;
+            line-height: 24px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    height: 4px;
+                    width: 40px;
+                    left: 50%;
+                    bottom: -16px;
+                    transform: translateX(-50%);
+                    background: $primary-color;
+                }
+        }
+        .card-descr {
+            color: $text-descr;
+            font-size: $font-normal;
+            line-height: 27px;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+}

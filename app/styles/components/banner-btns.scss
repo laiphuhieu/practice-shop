@@ -1,0 +1,118 @@
+.banner-btns 
+    .banner-btn {
+    display: block;
+}
+
+.banner-btns a:nth-child(2) {
+    margin-left: 10px;
+}
+
+.white-btn {
+    font-size: $font-normal;
+    line-height: 42px;
+    font-weight: 700 !important;
+    width: 150px;
+    height: 46px;
+    outline: 0 !important;
+    text-transform: uppercase;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    background-color: $white;
+    color: #000;
+    border: none;
+    transition: color 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    display: inline-block;
+    text-align: center;
+        &:hover {
+            color: $primary-color;
+        }
+}
+
+.animate-white-btn {
+    font-size: $font-normal;
+    line-height: 42px;
+    font-weight: 700 !important;
+    width: 150px;
+    height: 42px;
+    outline: 0 !important;
+    text-transform: uppercase;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+    transition: border-color 0.3s, color 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 100%;
+            background-color: $white;
+            transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+            transform-origin: 0 100%;
+            transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+            z-index: -1;
+        }
+        &:hover {
+            color: $primary-color;
+            border-color: $white ;
+        }
+        &:hover::before {
+            transform: rotate3d(0, 0, 1, 0deg);
+        }
+}
+
+.animate-orange-btn {
+    font-size: $font-normal;
+    line-height: 42px;
+    font-weight: 700 !important;
+    width: 150px;
+    height: 46px;
+    outline: 0 !important;
+    text-transform: uppercase;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent !important;
+    color: $primary-color !important;
+    border: 2px solid $primary-color !important;
+    transition: border-color 0.3s, color 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    z-index: 1;
+    display: inline-block !important;
+    text-align: center;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 100%;
+            background-color: $primary-color;
+            transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+            transform-origin: 0 100%;
+            transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+            z-index: -1;
+        }
+        &:hover {
+            color: $white !important;
+            border-color: $primary-color !important;
+        }
+        &:hover::before {
+            transform: rotate3d(0, 0, 1, 0deg);
+        }
+}
+

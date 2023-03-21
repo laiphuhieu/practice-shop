@@ -1,0 +1,152 @@
+.products-area {
+    padding-top: 120px;
+    padding-bottom: 90px;
+        .row {
+            flex-wrap: nowrap;
+        }
+        .small-products {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .product-wrapper.small {
+            position: relative;
+            padding: 10px 20px;
+            display: flex;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    background: 0 0;
+                    border-left: 2px solid #f99a00;
+                    border-top: 2px solid #f99a00;
+                    transition: all 0.3s;
+                    visibility: hidden;
+                }
+                &:after {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 0;
+                    background: 0 0;
+                    border-right: 2px solid #f99a00;
+                    border-bottom: 2px solid #f99a00;
+                    transition: all 0.3s;
+                    visibility: hidden;
+                }
+                .product-text {
+                    padding: 72px 0;
+                    .product-sub-title {
+                        margin-bottom: 28px;
+                    }
+                }
+                .img-wrapper {
+                    height: 100%;
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                        img {
+                            max-height: 400px;
+                        }
+                }
+        }
+        .product-wrapper.large {
+            height: 100%;
+                .slide-wrapper {
+                    position: relative;
+                    height: 100%;
+                }
+        }
+}
+
+.products-area .product-wrapper.small:hover::before,
+.products-area .product-wrapper.small:hover::after {
+    width: 116px;
+    height: 116px;
+    visibility: visible;
+} 
+
+.section-style-3 
+    .products-area 
+        .product-wrapper {
+            background-color: #f8f8f8;
+        }
+
+.products-area 
+    .product-wrapper 
+        .product-text {
+            width: 54%;
+            .product-title {
+                color: $title-color;
+                font-size: $font-small;
+                line-height: 22px;
+                font-weight: $font-weight-bold;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+            .product-sub-title {
+                color: $text-descr;
+                font-size: $font-sub-title;
+                line-height: 13px;
+                text-transform: uppercase;
+                font-weight: $font-weight-regular;
+            }
+            .product-price {
+                color: $primary-color;
+                font-size: $font-price;
+                line-height: 38px;
+                text-transform: uppercase;
+                font-weight: $font-weight-bold;
+                margin-bottom: 35px;
+                margin-top: 0 !important;
+            }
+        }
+
+.slide-wrapper 
+    .products-slider-controller {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1;
+            .controller-btn {
+                background-color: transparent;
+                border: 0;
+                font-weight: 600;
+                cursor: pointer;
+            }
+    }
+.products-area 
+    .product-slider-item {
+        padding: 68px 40px;
+}
+
+.products-area 
+    .product-wrapper 
+        .product-descr {
+        font-size: $font-normal;
+        line-height: 27px;
+        color: $text-descr;
+        font-weight: 400;
+        margin-bottom: 35px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+.products-area .product-slider-item .product-img {
+    float: right;
+    width: 70%;
+    margin-top: -90px;
+        img {
+            max-height: 400px;
+        }
+}

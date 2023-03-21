@@ -1,0 +1,115 @@
+.site-footer {
+    background-color: #363636 !important;
+    position: relative;
+        .row {
+            flex-wrap: nowrap;
+        }
+        .logo-text {
+            color: $white;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+}
+
+.footer-top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #616161;
+        .footer-descr {
+            font-size: $font-normal;
+            line-height: 27px;
+            color: $text-footer;
+            margin-bottom: 16px;
+        }
+        .footer-social-top {
+            font-size: $font-x-small;
+            line-height: 27px;
+            font-weight: 600;
+            color: $white;
+        }
+        .footer-social-top-orange {
+            color: $primary-color;
+        }
+
+        .footer-social-link {
+            border: 1px solid $white;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            color: #333333;
+                &:hover {
+                        border-color: #f99a00;
+                            span {
+                                color: $primary-color;
+                            }
+                    }
+                
+                span {
+                    font-size: $font-x-small;
+                    line-height: 25px;
+                    color: $white;
+                }
+        }
+        .footer-title {
+            font-size: $font-medium;
+            line-height: 24px;
+            font-weight: $font-weight-bold;
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+        }
+}
+
+.footer-info {
+    padding-right: 50px;
+}
+
+.footer-social-bottom {
+    display: flex;
+}
+
+.footer-social-bottom-item {
+    display: flex;
+    margin-right: 6px;
+}
+
+.footer-nav 
+    .footer-main-nav 
+        .footer-nav-item 
+            .footer-nav-link {
+                color: $footer-nav-color !important;
+                font-size: $font-normal;
+                line-height: 27px;
+                text-decoration: none;
+                    &:hover {
+                        color: $primary-color !important;
+                        transition: all 0.3s;
+                    }
+            }
+.site-footer 
+    .footer-data-item {
+        display: flex;
+        align-items: center;
+            .footer-data-text {
+                color: #e1e1e0;
+                font-size: 16px;
+                line-height: 27px;
+                margin-left: 10px;
+            }
+    }
+.footer-data-icon 
+    span {
+        font-size: $font-normal;
+        line-height: 16px;
+        color: $primary-color;
+    }
+.footer-bottom {
+    padding: 35px 0;
+    text-align: center;
+    color: $footer-nav-color;
+    font-size: $font-normal;
+}

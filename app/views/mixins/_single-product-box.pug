@@ -1,0 +1,14 @@
+mixin single-product-box(text, info, price, src)
+    .single-product-box 
+        .product-wrapper.small 
+            .product-text 
+                h4.product-title #{text}
+                h6.product-sub-title #{info}
+                h3.product-price 
+                    span 
+                        bdi #{price} 
+                            span VND 
+                a.animate-orange-btn(href="#") Order now! 
+            .product-img 
+                .img-wrapper 
+                    img(src=src, alt="")

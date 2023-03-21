@@ -1,0 +1,60 @@
+.section-style-1 {
+    position: relative;
+        .banner-container {
+            height: 100%;
+                .row {
+                    height: 100%;
+                    flex-wrap: nowrap;
+                }
+        }
+        .banner-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .banner-left {
+            color: $white;
+                .banner-title {
+                    color: #fff;
+                    font-size: $font-huge;
+                    line-height: 71px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                .banner-descr {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    margin-bottom: 95px;
+                }
+        }
+        .banner-right 
+            .product-img {
+                display: flex;
+                justify-content: flex-end;
+                    img {
+                        object-fit: cover;
+                        max-width: 350px;
+                    }
+            }
+        .banner-btns {
+            display: flex;
+            align-items: center;
+        }
+}
+
+.elementor-hero-img {
+    background-image: url("http://storevn.cws-projects.com/wp-content/uploads/2023/02/bg-three.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 93vh;
+    background-color: $primary-color;
+}
+
+
+.product-mb {
+    display: none;
+}

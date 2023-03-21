@@ -1,0 +1,24 @@
+block mixin
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title storevn.cws-projects.com
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet' href='./font/fontawesome-free-6.1.1-web/css/all.css')
+
+
+
+  body
+    div.body-wrapper
+      include views/header.pug
+      include views/content.pug
+      include views/footer.pug
+
+
+

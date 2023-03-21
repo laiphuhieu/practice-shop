@@ -1,0 +1,30 @@
+.section-heading {
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 67px;
+        .sub-title {
+            color: $sub-title;
+            text-transform: capitalize;
+            font-weight: $font-weight-semi-bold;
+            margin-bottom: 8px;
+            line-height: 14px;
+            letter-spacing: 1.5px;
+            font-size: $font-normal;
+        }
+        .title {
+            text-transform: capitalize;
+            color: #383838;
+            margin-bottom: 8px;
+            margin-top: 0;
+            line-height: 50px;
+            font-size: $font-title;
+            font-weight: $font-weight-light;
+        }
+
+        svg {
+            fill: #f99a00;
+            stroke: #f99a00;
+            width: 193px;
+            height: 26px;
+        }
+}

@@ -1,0 +1,73 @@
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: $text-descr;
+  line-height: 1.5;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a,
+p {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: $font-weight-semi-bold;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1376px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.text-auto {
+  margin: 0 auto;
+}
+
+.padding-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.margin-col {
+  margin-top: 48px;
+}
+
+.margin-col-2 {
+  margin-top: 24px;
+}

@@ -1,0 +1,30 @@
+.section-style-1 
+    .controller-btn {
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        background-color: #fff;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 10;
+        border: none;
+        padding: 0;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.3) !important;
+            }
+    }
+        .btn-left {
+            left: -15px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        .btn-right {
+            right: -15px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+

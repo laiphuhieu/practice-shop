@@ -1,0 +1,114 @@
+@media (max-width: 760px) {
+    .container {
+        max-width: 450px !important;
+    }
+
+    .products-area .small-products {
+        flex-direction: row;
+        margin-bottom: 8px;
+    }
+    .header-toolbar
+        .toolbar-left 
+            .address {
+                display: none !important;
+            }
+
+    .section-style-1 
+        .banner-right 
+            .product-img {
+                display: none !important;
+            }
+    .header-toolbar
+            .toolbar-container
+                .toolbar-right {
+                    transform: translateX(-40px) ;
+                }
+    .nav-wrapper {
+        display: none !important;
+    }
+
+    .site-device {
+        display: block !important;
+        transform: translateX(-40px);
+    }
+
+    .site-header 
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    .section-style-1 
+        .banner-left 
+            .banner-descr {
+                display: none;
+            }
+
+            .product-mb {
+                margin-bottom: 55px;
+                    img {
+                        width: 200px;
+                    }
+            } 
+    .product-mb {
+        display: block !important;
+    }
+
+    .section-style-1 
+        .banner-left   
+            .banner-title {
+                font-size: 40px !important;
+                line-height: 48px !important;
+                margin-bottom: 55px !important;
+            }
+            
+    .section-style-1 
+        .controller-btn {
+                width: 30px !important;
+                height: 50px !important;
+            }
+    .section-style-1   
+        .controller-btn.btn-left {
+                left: -5px;
+            }        
+    .section-style-1 
+        .controller-btn.btn-right {
+                right: -5px;
+            }
+    .site-footer .row {
+        flex-wrap: wrap !important;
+    }
+    .site-footer .row .col:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .products-area .row {
+        flex-wrap: wrap !important;
+    }
+
+    .products-area 
+        .product-wrapper 
+            .product-text 
+                .product-price {
+                    font-size: 20px !important;
+                    line-height: 32px !important;
+                }
+    .products-slider-controller {
+        display: none !important;
+    }
+
+    .products-area 
+        .product-slider-item 
+            .product-img {
+                float: none !important;
+                width: 100% !important;
+                margin-top: 0 !important;
+            }
+}  
+  /* Tablet */
+  
+  @media (min-width: 740px) and (max-width: 1023px) {
+    .container {
+        max-width: 960px !important;
+    }
+}

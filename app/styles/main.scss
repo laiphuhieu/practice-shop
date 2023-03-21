@@ -1,0 +1,21 @@
+@import './plugins/normalize';
+
+@import './responsive';
+@import './variables';
+@import './mixins';
+@import './grid';
+@import './global';
+
+@import './components/header.scss';
+@import './components/toolbar-icon.scss';
+@import './components/elementor-hero-img.scss';
+@import './components/slide-controller.scss';
+@import './components/material-icons.scss';
+@import './components/section-style-1.scss';
+@import './components/banner-btns.scss';
+@import './components/section-style-2.scss';
+@import './components/section-style-3.scss';
+@import './components/headline-block.scss';
+@import './components/section-style-4.scss';
+@import './components/footer.scss';
+
